@@ -1,2 +1,26 @@
-# legal
-Privacy policies and terms of use for my published mobile apps.
+# Legal
+
+Privacy policies and terms of use for my published apps.
+
+Each app has its own folder. The pages are plain, self-contained HTML — no
+trackers, no external fonts, no analytics. A privacy policy that loads a font
+from someone else's server is not a privacy policy.
+
+## Apps
+
+| App | Documents |
+|---|---|
+| **Daily Lash** — organizer for lash and brow artists ([App Store](https://apps.apple.com/app/id6459474353)) | [Privacy Policy](daily-lash/privacy.html) · [Terms of Use](daily-lash/terms.html) |
+
+## How these documents are written
+
+They describe what the app actually does, checked against its source code —
+what is stored, where it is stored, what leaves the device and when. Sections
+that do not apply are left out rather than filled with boilerplate.
+
+Every change is a commit, so it is always possible to see what a document said
+on any given date.
+
+## Contact
+
+tekmyaworkplace@gmail.com
