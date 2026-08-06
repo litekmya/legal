@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+  Шаблон страницы юридического документа.
+
+  Самодостаточный: ни внешних шрифтов, ни скриптов, ни аналитики. Страница с
+  политикой конфиденциальности, которая подгружает чужой шрифт, отправляет IP
+  читателя третьей стороне — и это ровно то, о чём она обещает не молчать.
+
+  Что заменить (плейсхолдеры в теле страницы обрамлены двойными фигурными
+  скобками; здесь, в комментарии, скобки намеренно опущены — иначе простая
+  замена по строке подставит текст ещё и сюда, и документ удвоится):
+
+    TITLE      — «Privacy Policy» или «Terms of Use»
+    APP_NAME   — название приложения, показывается в шапке
+    UPDATED    — дата обновления, например «6 August 2026»
+    CONTENT    — текст документа тегами h2, p, ul, table
+    OTHER_HREF — privacy.html или terms.html
+    OTHER_NAME — подпись ссылки на второй документ
+
+  Проверка после сборки: каждый заголовок раздела должен встречаться на
+  странице ровно один раз.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdfaf3;
+    --surface: #ffffff;
+    --text: #1c1a17;
+    --muted: #6b6459;
+    --line: #e6ded0;
+    --accent: #b4442c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --surface: #1e1d16;
+      --text: #f0ece3;
+      --muted: #a49b8c;
+      --line: #34312a;
+      --accent: #e08a72;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  .app { font-size: 15px; color: var(--accent); font-weight: 600; letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 10px; }
+  .updated { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 20px; margin: 34px 0 10px; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 15px;
+    word-break: break-all;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 18px; font-size: 16px; }
+  th, td { border: 1px solid var(--line); padding: 9px 11px; text-align: left; vertical-align: top; }
+  th { background: var(--surface); font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--muted);
+  }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="app">Daily Lash</div>
+    <h1>Legal</h1>
+    <p class="updated">Last updated: 6 August 2026</p>
+  </header>
+
+    <p>Legal documents for the <strong>Daily Lash</strong> iOS app.</p>
+  <ul>
+    <li><a href="privacy.html">Privacy Policy</a> — what the app does with your data.</li>
+    <li><a href="terms.html">Terms of Use</a> — licence, subscription and renewal terms.</li>
+  </ul>
+  <h2>Contact</h2>
+  <p>Questions about either document: <a href="mailto:tekmyaworkplace@gmail.com">tekmyaworkplace@gmail.com</a></p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
