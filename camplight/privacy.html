@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+  Шаблон страницы юридического документа.
+
+  Самодостаточный: ни внешних шрифтов, ни скриптов, ни аналитики. Страница с
+  политикой конфиденциальности, которая подгружает чужой шрифт, отправляет IP
+  читателя третьей стороне — и это ровно то, о чём она обещает не молчать.
+
+  Что заменить (плейсхолдеры в теле страницы обрамлены двойными фигурными
+  скобками; здесь, в комментарии, скобки намеренно опущены — иначе простая
+  замена по строке подставит текст ещё и сюда, и документ удвоится):
+
+    TITLE      — «Privacy Policy» или «Terms of Use»
+    APP_NAME   — название приложения, показывается в шапке
+    UPDATED    — дата обновления, например «6 August 2026»
+    CONTENT    — текст документа тегами h2, p, ul, table
+    OTHER_HREF — privacy.html или terms.html
+    OTHER_NAME — подпись ссылки на второй документ
+
+  Проверка после сборки: каждый заголовок раздела должен встречаться на
+  странице ровно один раз.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdfaf3;
+    --surface: #ffffff;
+    --text: #1c1a17;
+    --muted: #6b6459;
+    --line: #e6ded0;
+    --accent: #b4442c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --surface: #1e1d16;
+      --text: #f0ece3;
+      --muted: #a49b8c;
+      --line: #34312a;
+      --accent: #e08a72;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  .app { font-size: 15px; color: var(--accent); font-weight: 600; letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 10px; }
+  .updated { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 20px; margin: 34px 0 10px; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 15px;
+    word-break: break-all;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 18px; font-size: 16px; }
+  th, td { border: 1px solid var(--line); padding: 9px 11px; text-align: left; vertical-align: top; }
+  th { background: var(--surface); font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--muted);
+  }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="app">Camplight</div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 19 August 2026</p>
+  </header>
+
+  <p><strong>Your data stays on your device.</strong> Camplight has no server of its own, no account to create, and no analytics. We cannot see your sessions, your streaks or your settings, because nothing you do in the app is sent to us.</p>
+
+<h2>What you put into the app</h2>
+<p>Camplight stores only what a focus timer needs to work:</p>
+<ul>
+<li>the length and outcome of each focus session, and when it happened;</li>
+<li>which campsite you chose;</li>
+<li>your current and longest streak, and your total focus time;</li>
+<li>the goal you picked during onboarding — work, phone, evening or quiet;</li>
+<li>your settings: sound and music preferences, volume levels, strict mode, reminder time and quiet hours.</li>
+</ul>
+<p>There are no free-text fields anywhere in Camplight. The journal is built automatically from your own sessions — you never type anything into it. The app asks for no name, no email and no account.</p>
+
+<h2>Where your data is stored</h2>
+<p>On your device, in the app's own storage. If you are signed in to iCloud, the same records also sync to your <strong>private iCloud database</strong> through Apple's CloudKit, so your progress follows you to your other devices.</p>
+<p>That private database belongs to your Apple Account. We have no access to it and no way to read it — the operator is Apple, not us. If you turn iCloud off, everything simply stays on the one device.</p>
+<p>Your data is also included in your iPhone's standard backup, if you have backups switched on. That backup is created and managed by Apple under Apple's own terms.</p>
+
+<h2>Location and weather</h2>
+<p>If you switch the weather feature on, Camplight asks for your <strong>approximate location</strong> while the app is open. The accuracy is deliberately reduced — roughly to your city area, never a precise position.</p>
+<p>The coordinate is sent to Apple's WeatherKit service to find out what the weather is where you are, so that the rain or snow in the scene matches the weather outside your window. The coordinate is not saved, is not written into your records, and never reaches us.</p>
+<p>If you decline the permission, Camplight keeps working normally — the scene simply shows clear weather.</p>
+
+<h2>Purchases</h2>
+<p>Camplight offers an optional subscription. Payment is handled entirely by Apple. We never see your card details, your billing address or your Apple Account.</p>
+<p>Subscription status is managed for us by <strong>RevenueCat</strong>. It receives an anonymous identifier generated for your installation and the details of the transaction — which product was bought, when, and whether it is still active. It does not receive your name, your email, or anything you do inside the app. You can read RevenueCat's privacy policy at <a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a>.</p>
+
+<h2>Notifications</h2>
+<p>Reminders are scheduled locally on your device. There is no push server behind Camplight, and no device token is sent anywhere.</p>
+<p>The app does receive silent system notifications from iCloud when your own data changes on another device. These come from Apple as part of CloudKit sync and carry nothing but your own records.</p>
+
+<h2>No tracking, no ads, no analytics</h2>
+<p>Camplight contains no advertising, no analytics and no tracking of any kind. It does not request the advertising identifier (IDFA), does not use App Tracking Transparency, and does not build a profile of you. Apart from RevenueCat, described above, the app contains no third-party SDK at all.</p>
+
+<h2>Children</h2>
+<p>Camplight is not directed at children, and we do not knowingly collect data from children. The app stores no information that could identify anyone.</p>
+
+<h2>Deleting your data</h2>
+<p>Deleting the app removes everything stored on that device.</p>
+<p>The copy in your private iCloud database is not removed by deleting the app, because it belongs to your Apple Account rather than to us. To remove it, open Settings on your iPhone, tap your name, then iCloud, then Manage Account Storage, find Camplight and delete its data.</p>
+<p>Because we hold no copy of your data, there is nothing for us to delete on our side — and, equally, nothing we could restore for you.</p>
+
+<h2>Your rights</h2>
+<p>Camplight does not collect personal data, so in normal use there is nothing to request access to, correct or export. If you are in the European Economic Area, the United Kingdom or Brazil and believe we hold data about you, write to us and we will answer within the period your law requires.</p>
+
+<h2>Changes to this policy</h2>
+<p>If a future version of Camplight starts doing something new with your data, this page will be updated before that version ships, and the date at the top of the page will change.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:tekmyaworkplace@gmail.com">tekmyaworkplace@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">All documents</a>
+    <a href="terms.html">Terms of Use</a>
+  </footer>
+</main>
+</body>
+</html>

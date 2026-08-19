@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+  Шаблон страницы юридического документа.
+
+  Самодостаточный: ни внешних шрифтов, ни скриптов, ни аналитики. Страница с
+  политикой конфиденциальности, которая подгружает чужой шрифт, отправляет IP
+  читателя третьей стороне — и это ровно то, о чём она обещает не молчать.
+
+  Что заменить (плейсхолдеры в теле страницы обрамлены двойными фигурными
+  скобками; здесь, в комментарии, скобки намеренно опущены — иначе простая
+  замена по строке подставит текст ещё и сюда, и документ удвоится):
+
+    TITLE      — «Privacy Policy» или «Terms of Use»
+    APP_NAME   — название приложения, показывается в шапке
+    UPDATED    — дата обновления, например «6 August 2026»
+    CONTENT    — текст документа тегами h2, p, ul, table
+    OTHER_HREF — privacy.html или terms.html
+    OTHER_NAME — подпись ссылки на второй документ
+
+  Проверка после сборки: каждый заголовок раздела должен встречаться на
+  странице ровно один раз.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Use</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdfaf3;
+    --surface: #ffffff;
+    --text: #1c1a17;
+    --muted: #6b6459;
+    --line: #e6ded0;
+    --accent: #b4442c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --surface: #1e1d16;
+      --text: #f0ece3;
+      --muted: #a49b8c;
+      --line: #34312a;
+      --accent: #e08a72;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  .app { font-size: 15px; color: var(--accent); font-weight: 600; letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 10px; }
+  .updated { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 20px; margin: 34px 0 10px; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 15px;
+    word-break: break-all;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 18px; font-size: 16px; }
+  th, td { border: 1px solid var(--line); padding: 9px 11px; text-align: left; vertical-align: top; }
+  th { background: var(--surface); font-weight: 600; }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--muted);
+  }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="app">Camplight</div>
+    <h1>Terms of Use</h1>
+    <p class="updated">Last updated: 19 August 2026</p>
+  </header>
+
+  <h2>The licence</h2>
+<p>Camplight is licensed to you, not sold. You get a personal, non-transferable, non-exclusive licence to use the app on Apple devices you own or control. You may not resell it, rent it out, decompile it or take it apart.</p>
+<p>Camplight is distributed through the App Store, so Apple's standard licence terms also apply to you: <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">apple.com/legal/internet-services/itunes/dev/stdeula</a>. Where those terms and these ones disagree, Apple's terms win.</p>
+
+<h2>What Camplight is — and what it is not</h2>
+<p>Camplight is a focus timer wrapped in an ambient campsite scene. You choose how long to concentrate, the campfire burns while you work, and the app keeps a record of the sessions you finished.</p>
+<p>It is not a medical, therapeutic or psychological service, and it does not treat, diagnose or manage any condition, including attention disorders or phone addiction. If focus or screen use is affecting your health, please talk to a professional rather than to a timer.</p>
+<p><strong>Camplight does not block anything on your phone.</strong> Strict mode and Locked Mode are rules that live inside Camplight: if you leave the app during a session, the session fails and the fire goes out. Nothing stops you from leaving, and Camplight has no power to restrict which other apps you open or how long you use them.</p>
+
+<h2>Free and paid</h2>
+<p>These parts of Camplight are free and will stay free:</p>
+<ul>
+<li>the forest clearing campsite, day and night;</li>
+<li>the timer and the stopwatch, with strict mode;</li>
+<li>your journal, your streaks and your basic statistics;</li>
+<li>daily reminders;</li>
+<li>two music tracks and the full nature soundscape.</li>
+</ul>
+<p>A subscription unlocks the rest:</p>
+<ul>
+<li>every campsite, including the ones added in future updates;</li>
+<li>the whole music library and its themed sets;</li>
+<li>Locked Mode, the stricter session where leaving the app always ends the session;</li>
+<li>extended statistics.</li>
+</ul>
+
+<h2>The subscription</h2>
+<p>Camplight Premium is available monthly or yearly. The exact price for your region is always shown in the app before you buy, and prices may differ between countries.</p>
+<p>The subscription renews automatically unless you switch renewal off at least 24 hours before the current period ends. Your Apple Account is charged within the 24 hours before renewal.</p>
+<p>You can see, change or cancel your subscription at any time in Settings on your iPhone, under your name, then Subscriptions. Cancelling stops the next renewal; the current period runs to its end. <strong>Deleting the app does not cancel a subscription</strong> — you have to cancel it in those settings.</p>
+<p>A free trial may be offered. Only one introductory offer can be used per subscription group, so if you have already used a trial for Camplight you will not be offered another one. If you buy a subscription while a trial is running, the unused part of that trial is forfeited.</p>
+<p>Refunds are handled by Apple, not by us. Requests go through <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+<p>When a subscription ends, nothing is taken away from your history: your past sessions, journal entries and streaks stay exactly as they are. Only the paid campsites and features stop being available for new sessions.</p>
+
+<h2>Your data and backups</h2>
+<p>We keep no copy of your data. If you lose your device, sign out of iCloud or delete the app, we cannot recover anything for you, because we never had it. Keeping iCloud sync or device backups switched on is the only protection against losing your history, and that protection is provided by Apple, not by us.</p>
+
+<h2>Availability and changes</h2>
+<p>Camplight is provided as it is. Features may be added, changed or removed in later versions, and support for older versions of iOS ends over time as Apple's own tools move on. We do not promise that the app will be free of every fault or available without interruption.</p>
+<p>Content that depends on outside services — the weather in the scene, subscription status — needs an internet connection and may be unavailable if those services are down. The timer itself works offline.</p>
+
+<h2>Limitation of liability</h2>
+<p>To the extent the law allows, we are not liable for lost profits, lost data, missed appointments, missed deadlines, or any indirect or consequential loss arising from your use of Camplight. Some countries do not allow limits like these; where that is the case, the limits apply only as far as that country's law permits, and your statutory rights as a consumer are unaffected.</p>
+
+<h2>Changes to these terms</h2>
+<p>These terms may change as the app changes. The date at the top of this page shows when they were last updated. Continuing to use Camplight after a change means you accept the updated terms.</p>
+
+<h2>Contact</h2>
+<p>Questions about these terms: <a href="mailto:tekmyaworkplace@gmail.com">tekmyaworkplace@gmail.com</a></p>
+
+  <footer>
+    <a href="index.html">All documents</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
