@@ -92,7 +92,7 @@
   <header>
     <div class="app">Camplight</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 19 August 2026</p>
+    <p class="updated">Last updated: 29 August 2026</p>
   </header>
 
   <p><strong>Your data stays on your device.</strong> Camplight has no server of its own, no account to create, and no analytics. We cannot see your sessions, your streaks or your settings, because nothing you do in the app is sent to us.</p>
@@ -125,6 +125,12 @@
 <h2>Notifications</h2>
 <p>Reminders are scheduled locally on your device. There is no push server behind Camplight, and no device token is sent anywhere.</p>
 <p>The app does receive silent system notifications from iCloud when your own data changes on another device. These come from Apple as part of CloudKit sync and carry nothing but your own records.</p>
+
+<h2>Screen Time and app blocking</h2>
+<p>Locked Mode can block apps you choose for the length of a session. This is optional: it does nothing until you turn it on and grant Camplight access to Screen Time, which is Apple's Family Controls system.</p>
+<p>The way it handles your choice is worth explaining, because it is unusually private. When you pick apps to block, iOS does not tell Camplight what you picked. The selection arrives as opaque tokens that cannot be read or turned back into app names — not by us, not by anyone. We store those tokens on your device so your choice is remembered between sessions. They are never sent anywhere. They are not included in iCloud sync either, because they only mean anything on the device that created them.</p>
+<p>Camplight cannot see which apps you use, how long you use them, or what you do in them. Screen Time gives it exactly one ability: to make apps you selected yourself unavailable while a session runs.</p>
+<p>You can withdraw Screen Time access at any time in Settings on your iPhone. Withdrawing it ends any blocking immediately.</p>
 
 <h2>No tracking, no ads, no analytics</h2>
 <p>Camplight contains no advertising, no analytics and no tracking of any kind. It does not request the advertising identifier (IDFA), does not use App Tracking Transparency, and does not build a profile of you. Apart from RevenueCat, described above, the app contains no third-party SDK at all.</p>
