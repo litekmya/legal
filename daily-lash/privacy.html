@@ -1,25 +1,4 @@
 <!DOCTYPE html>
-<!--
-  Шаблон страницы юридического документа.
-
-  Самодостаточный: ни внешних шрифтов, ни скриптов, ни аналитики. Страница с
-  политикой конфиденциальности, которая подгружает чужой шрифт, отправляет IP
-  читателя третьей стороне — и это ровно то, о чём она обещает не молчать.
-
-  Что заменить (плейсхолдеры в теле страницы обрамлены двойными фигурными
-  скобками; здесь, в комментарии, скобки намеренно опущены — иначе простая
-  замена по строке подставит текст ещё и сюда, и документ удвоится):
-
-    TITLE      — «Privacy Policy» или «Terms of Use»
-    APP_NAME   — название приложения, показывается в шапке
-    UPDATED    — дата обновления, например «6 August 2026»
-    CONTENT    — текст документа тегами h2, p, ul, table
-    OTHER_HREF — privacy.html или terms.html
-    OTHER_NAME — подпись ссылки на второй документ
-
-  Проверка после сборки: каждый заголовок раздела должен встречаться на
-  странице ровно один раз.
--->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -90,35 +69,46 @@
 <body>
 <main>
   <header>
-    <div class="app">Daily Lash</div>
+    <div class="app">BelaHora</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 6 August 2026</p>
+    <p class="updated">Last updated: 10 September 2026</p>
   </header>
 
-    <p>Daily Lash is an organizer for independent beauty professionals. This policy explains what the app does with data. It is written to describe how the app actually works, not to cover every hypothetical case.</p>
+  <p>BelaHora is an organizer for independent beauty professionals. This policy explains what the app does with data. It is written to describe how the app actually works, not to cover every hypothetical case.</p>
   <p><strong>The short version: your data stays on your iPhone. The app has no server, and the developer cannot see your clients, your appointments, your photos, or your income.</strong></p>
   <h2>Data you enter</h2>
-  <p>Everything you put into Daily Lash — client names, phone numbers, notes and preferences, appointments, services and prices, photos of your work, your own profile and address, and your settings — is stored on your device, inside the app&#x27;s private storage area. No copy is sent anywhere.</p>
+  <p>Everything you put into BelaHora — client names, phone numbers, notes and preferences, appointments, services and prices, photos of your work, your own profile and address, and your settings — is stored on your device, inside the app&#x27;s private storage area. No copy is sent anywhere.</p>
   <p>The app contains no networking code of any kind for this data. There is no account to create, no sign-in, no sync service, and no cloud storage operated by the developer.</p>
   <h2>Where copies of your data can end up</h2>
   <p>There are three ways data can leave the device, and all three are started by you.</p>
   <p><strong>Backup files.</strong> The app can create a backup archive containing your clients, appointments, photos, services and settings. The app does not upload it. When the archive is ready, iOS shows the standard share sheet and you decide where it goes — Files, iCloud Drive, a messaging app, or nowhere at all. Once you choose a destination, that service&#x27;s own privacy policy applies to the file.</p>
   <p><strong>Spreadsheet export.</strong> The same applies to the CSV export of appointments and clients: the app creates the files and hands them to the iOS share sheet. You choose the destination.</p>
   <p><strong>Messages to your clients.</strong> When you send a reminder or offer a free slot, the app prepares the text and opens the messaging app you pick — WhatsApp, Telegram, SMS or email. The app itself does not send anything. You review the message and send it yourself, and from that moment the message is handled by that app and its provider.</p>
-  <p>Separately, note that Apple&#x27;s standard iPhone backup includes the app&#x27;s storage area. If you have iCloud Backup enabled, your Daily Lash data is included in it. That backup is created and managed by Apple under Apple&#x27;s terms, not by this app.</p>
+  <p>Separately, note that Apple&#x27;s standard iPhone backup includes the app&#x27;s storage area. If you have iCloud Backup enabled, your BelaHora data is included in it. That backup is created and managed by Apple under Apple&#x27;s terms, not by this app.</p>
+  <h2>Photos</h2>
+  <p>The app never asks for access to your photo library, and it does not have it. When you add a photo of your work, iOS shows its own picker and hands the app only the images you selected. The app cannot see anything else in your library.</p>
   <h2>Purchases and subscription</h2>
   <p>Payments are processed by Apple. The developer never receives your card details, billing address or Apple Account credentials.</p>
   <p>To know whether your subscription is active, the app uses RevenueCat, a subscription management service. RevenueCat receives an anonymous identifier generated on your device and information about the purchase itself — which product, whether it is active, when it renews. It does not receive your clients, appointments, photos, prices, name, email or phone number, because the app never sends that data anywhere.</p>
   <h2>Notifications</h2>
   <p>Reminders about appointments, the evening review and the backup reminder are local notifications. They are scheduled by the app on your device and shown by iOS. Nothing about them is sent over the network.</p>
-  <h2>No advertising, no analytics, no tracking</h2>
-  <p>Daily Lash contains no advertising, no analytics SDK, and no tracking of any kind. It does not collect the advertising identifier (IDFA), does not build a profile of you, and does not share data with data brokers or advertising networks. The app&#x27;s privacy manifest declares tracking as disabled.</p>
+  <h2>No advertising, no tracking — and what the app does count</h2>
+  <p>BelaHora contains no advertising and no tracking of any kind. It does not collect the advertising identifier (IDFA), does not build a profile of you, and does not share data with data brokers or advertising networks. The app&#x27;s privacy manifest declares tracking as disabled, and the AppTrackingTransparency and AdSupport frameworks are not linked into the app at all.</p>
+  <p>Since version 1.3, the app does record six anonymous counters, so that the developer can see where people get stuck and fix it. They are:</p>
+  <ul>
+    <li>whether onboarding was completed, and which specialty was chosen;</li>
+    <li>whether a first appointment was created;</li>
+    <li>whether a first client was added;</li>
+    <li>how many visits have been marked as done, as steps: 1, 3, 10, 30;</li>
+    <li>whether the paywall screen was opened.</li>
+  </ul>
+  <p>These counters are stored by RevenueCat against the same anonymous identifier that is used for your subscription. They contain no names, phone numbers, notes, photos, prices or income figures, they are not linked to your identity, and they are never used for advertising.</p>
   <p>An earlier version of this app, published before 2024, did include an advertising network. It has been removed, and no advertising code remains.</p>
   <h2>Data about your clients</h2>
-  <p>This deserves saying plainly, because the app exists for exactly this purpose: the client information you enter is personal data belonging to other people. You decide what to record about them and for how long. Under laws such as the GDPR and similar regimes, you are the one responsible for that data, and Daily Lash is simply the tool you use to store it on your own device.</p>
+  <p>This deserves saying plainly, because the app exists for exactly this purpose: the client information you enter is personal data belonging to other people. You decide what to record about them and for how long. Under laws such as the GDPR and similar regimes, you are the one responsible for that data, and BelaHora is simply the tool you use to store it on your own device.</p>
   <p>Please record only what you need for your work, and tell your clients what you keep if they ask.</p>
   <h2>Children</h2>
-  <p>Daily Lash is a professional tool intended for adults. It is not directed at children, and the developer does not knowingly collect data from children.</p>
+  <p>BelaHora is a professional tool intended for adults. It is not directed at children, and the developer does not knowingly collect data from children.</p>
   <h2>Deleting your data</h2>
   <p>Deleting the app from your iPhone deletes everything it stored: the database, the photos and the settings. There is no copy on any server to request the deletion of, because no such copy is ever made. Individual clients, appointments and photos can also be deleted inside the app at any time.</p>
   <p>Backup archives you saved elsewhere are not affected — delete those where you stored them. If you have iCloud Backup enabled, removing the app&#x27;s data from an existing device backup is handled through Apple&#x27;s settings.</p>
