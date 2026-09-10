@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Quadrans</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fdfaf3;
+    --surface: #ffffff;
+    --text: #1c1a17;
+    --muted: #6b6459;
+    --line: #e6ded0;
+    --accent: #b4442c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16150f;
+      --surface: #1e1d16;
+      --text: #f0ece3;
+      --muted: #a49b8c;
+      --line: #34312a;
+      --accent: #e08a72;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 72px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 20px; margin-bottom: 28px; }
+  .app { font-size: 15px; color: var(--accent); font-weight: 600; letter-spacing: .02em; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 8px 0 10px; }
+  .updated { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 20px; margin: 34px 0 10px; }
+  p, li { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  strong { font-weight: 600; }
+  a { color: var(--accent); }
+  a:hover { text-decoration: none; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 15px;
+    word-break: break-all;
+  }
+  table { border-collapse: collapse; width: 100%; margin: 0 0 18px; font-size: 16px; }
+  th, td { border: 1px solid var(--line); padding: 9px 11px; text-align: left; vertical-align: top; }
+  th { background: var(--surface); font-weight: 600; }
+  .note {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: var(--muted);
+    margin: 0 0 24px;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 15px;
+    color: var(--muted);
+  }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="app">Quadrans</div>
+    <h1>Support</h1>
+    <p class="updated">Last updated: 10 September 2026</p>
+  </header>
+
+  <p>Quadrans is made by one person. Write to <a href="mailto:tekmyaworkplace@gmail.com">tekmyaworkplace@gmail.com</a> and you will get an answer from that person, usually within two or three days.</p>
+  <p>It helps if you say which device you are using, which version of iOS or watchOS it is running, and what you expected to happen. The app version is at the bottom of the Settings screen.</p>
+  <h2>The voice went quiet when I locked the screen</h2>
+  <p>It should not. The voice is designed to keep going with the screen off — that is the point of the app. If it stops, check that background sound and voice prompts are still switched on in Settings, and that another app has not taken over audio playback.</p>
+  <h2>The vibration stops when the screen goes dark</h2>
+  <p>On iPhone, that is how iOS works: once the app is no longer on screen, the system stops giving it access to the vibration motor. There is no way around it, and an app that claims otherwise is doing something else.</p>
+  <p>On <strong>Apple Watch</strong> both continue: the wrist taps keep marking each phase with the screen off. If you want to practise with your eyes closed and nothing on the screen, the watch is the way to do it.</p>
+  <h2>I hear nothing at all</h2>
+  <p>The app plays through the media channel, so the silent switch does not mute it. Check the volume with the side buttons during a practice, and check that <strong>Voice prompts</strong> is on in Settings. If music is playing from another app, Quadrans deliberately leaves its own background sound off and only lowers your music around each spoken phrase.</p>
+  <h2>No star appeared after my practice</h2>
+  <p>A star is earned by finishing the practice you started, or by breathing for at least a minute. A session cut short before that still counts towards your minutes and stays in your history — it just does not light a new star.</p>
+  <h2>A practice on the watch did not show up on the phone</h2>
+  <p>The two apps exchange finished sessions when both are reachable. Open the app on the iPhone with the watch nearby and give it a moment. If it still has not arrived, write in — that is a bug, not a setting.</p>
+  <h2>How do I get my purchase back?</h2>
+  <p>Open the purchase screen in the app and tap <strong>Restore</strong>. The purchase is tied to your Apple ID, so it returns on any device signed in with the same one, at no additional cost.</p>
+  <h2>Can I change the voice language separately from the app language?</h2>
+  <p>Yes, with the full set. Settings has a language for the interface and a language for the voice, and they do not have to match — some people prefer to be guided in a language they only half-listen to.</p>
+  <h2>Something else</h2>
+  <p><a href="mailto:tekmyaworkplace@gmail.com">tekmyaworkplace@gmail.com</a> — feature requests are read too, and a fair number of them have shipped.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Use</a>
+  </footer>
+</main>
+</body>
+</html>
