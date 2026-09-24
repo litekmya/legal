@@ -13,7 +13,7 @@ from someone else's server is not a privacy policy.
 | **BelaHora** — appointment and client organizer for beauty professionals working for themselves ([App Store](https://apps.apple.com/app/id6459474353)) | [Privacy Policy](daily-lash/privacy.html) · [Terms of Use](daily-lash/terms.html) · [Support](daily-lash/support.html) |
 | **Quadrans** — breathing practice for iPhone and Apple Watch | [Privacy Policy](quadrans/privacy.html) · [Terms of Use](quadrans/terms.html) · [Support](quadrans/support.html) |
 | **Camplight** — focus timer for iPhone | [Privacy Policy](camplight/privacy.html) · [Terms of Use](camplight/terms.html) · [Support](camplight/support.html) |
-| **How Well Do You Know Me: Party** — party quiz for 2 to 6 players, each on their own iPhone | [Privacy Policy](knowmeparty/privacy.html) · [Terms of Use](knowmeparty/terms.html) · [Support](knowmeparty/support.html) |
+| **How Well Do You Know Me: Group** — party quiz for 2 to 6 players, each on their own iPhone | [Privacy Policy](knowmeparty/privacy.html) · [Terms of Use](knowmeparty/terms.html) · [Support](knowmeparty/support.html) |
 
 The folder is still called `daily-lash` — that was the app's previous name. The
 folder name is deliberately not renamed: the links to these pages are compiled
