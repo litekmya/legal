@@ -14,6 +14,7 @@ from someone else's server is not a privacy policy.
 | **Quadrans** — breathing practice for iPhone and Apple Watch | [Privacy Policy](quadrans/privacy.html) · [Terms of Use](quadrans/terms.html) · [Support](quadrans/support.html) |
 | **Camplight** — focus timer for iPhone | [Privacy Policy](camplight/privacy.html) · [Terms of Use](camplight/terms.html) · [Support](camplight/support.html) |
 | **How Well Do You Know Me: Group** — party quiz for 2 to 6 players, each on their own iPhone | [Privacy Policy](knowmeparty/privacy.html) · [Terms of Use](knowmeparty/terms.html) · [Support](knowmeparty/support.html) |
+| **5 Second Rule** — party game: name three things in five seconds, on one shared iPhone | [Privacy Policy](fivesecondrule/privacy.html) · [Terms of Use](fivesecondrule/terms.html) · [Support](fivesecondrule/support.html) |
 
 The folder is still called `daily-lash` — that was the app's previous name. The
 folder name is deliberately not renamed: the links to these pages are compiled
