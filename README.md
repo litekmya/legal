@@ -16,6 +16,7 @@ from someone else's server is not a privacy policy.
 | **How Well Do You Know Me: Group** — party quiz for 2 to 6 players, each on their own iPhone | [Privacy Policy](knowmeparty/privacy.html) · [Terms of Use](knowmeparty/terms.html) · [Support](knowmeparty/support.html) |
 | **5 Second Rule** — party game: name three things in five seconds, on one shared iPhone | [Privacy Policy](fivesecondrule/privacy.html) · [Terms of Use](fivesecondrule/terms.html) · [Support](fivesecondrule/support.html) |
 | **eSign** — fill in and sign PDF files and paper documents on iPhone and iPad | [Privacy Policy](esign/privacy.html) · [Terms of Use](esign/terms.html) · [Support](esign/support.html) |
+| **Speed Reading** — reading trainer: scan a page, read it one word at a time (RSVP) and train a few minutes a day | [Privacy Policy](speed-reading/privacy.html) · [Terms of Use](speed-reading/terms.html) · [Support](speed-reading/support.html) |
 
 The folder is still called `daily-lash` — that was the app's previous name. The
 folder name is deliberately not renamed: the links to these pages are compiled
