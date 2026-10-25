@@ -13,10 +13,7 @@ from someone else's server is not a privacy policy.
 | **BelaHora** — appointment and client organizer for beauty professionals working for themselves ([App Store](https://apps.apple.com/app/id6459474353)) | [Privacy Policy](daily-lash/privacy.html) · [Terms of Use](daily-lash/terms.html) · [Support](daily-lash/support.html) |
 | **Quadrans** — breathing practice for iPhone and Apple Watch | [Privacy Policy](quadrans/privacy.html) · [Terms of Use](quadrans/terms.html) · [Support](quadrans/support.html) |
 | **Camplight** — focus timer for iPhone | [Privacy Policy](camplight/privacy.html) · [Terms of Use](camplight/terms.html) · [Support](camplight/support.html) |
-| **How Well Do You Know Me: Group** — party quiz for 2 to 6 players, each on their own iPhone | [Privacy Policy](knowmeparty/privacy.html) · [Terms of Use](knowmeparty/terms.html) · [Support](knowmeparty/support.html) |
-| **5 Second Rule** — party game: name three things in five seconds, on one shared iPhone | [Privacy Policy](fivesecondrule/privacy.html) · [Terms of Use](fivesecondrule/terms.html) · [Support](fivesecondrule/support.html) |
-| **eSign** — fill in and sign PDF files and paper documents on iPhone and iPad | [Privacy Policy](esign/privacy.html) · [Terms of Use](esign/terms.html) · [Support](esign/support.html) |
-| **Speed Reading** — reading trainer: scan a page, read it one word at a time (RSVP) and train a few minutes a day | [Privacy Policy](speed-reading/privacy.html) · [Terms of Use](speed-reading/terms.html) · [Support](speed-reading/support.html) |
+| **Squadoo** — party games for friends, couples and family (Who Knows Who and Quick Three). The folder is still called `knowmeparty`, the app's earlier working name | [Privacy Policy](knowmeparty/privacy.html) · [Terms of Use](knowmeparty/terms.html) · [Support](knowmeparty/support.html) |
 
 The folder is still called `daily-lash` — that was the app's previous name. The
 folder name is deliberately not renamed: the links to these pages are compiled
